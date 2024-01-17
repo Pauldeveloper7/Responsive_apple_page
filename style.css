@@ -1,0 +1,303 @@
+html,body{
+    width:100%;
+    overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navigation{
+    color:white;
+    display:flex;  
+    justify-content: center;
+    background-color: black;
+}
+.navigation ul{
+    display: flex;
+}
+.list-items{
+    list-style: none;
+    margin:10px;
+    cursor: pointer;
+}
+#logo{
+    margin:0px 5px;
+}
+#search img {
+   border-radius: 12px ;
+   height:20px;
+}
+/* // Nested designing list items  */
+ol.nested{
+    display: none;
+    position: absolute;
+    top: 57px;
+    z-index: 1;
+    width:50%;
+    background-color: black;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow:  5px 5px 5px 5px white;
+    transition-property: transform; /* Correct transition-property */
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+ol.nested:hover{
+  transform:translate(12px) ;
+}
+
+ol.nested.nested-item{
+    width:400px;
+}
+ol.nested.nested-item ol.li{
+    margin:10px;
+}
+ol.nested h1{
+    width:65%;
+}
+ol.nested p{
+    color:grey;
+    font-size: 15px;
+    margin-right: 35px;
+}
+li{
+    list-style: none;
+}
+
+/* ol.nested.Mac.nested-item2 ol{
+    display:flex;
+    flex-direction: column;
+}
+ol.nested.ipad.nested-item3 ol{
+    display:flex;
+    flex-direction: column;
+} */
+#Store{
+   left:25px; 
+}
+
+ol.nested#Accessories{
+    left:560px;
+}
+ol.nested#Entertainment{
+    overflow: scroll;
+}
+ol.nested#Support{
+    left:530px;
+}
+ol.nested#searchLi{
+    left:560px
+}
+ol.nested#searchLi input{
+    padding: 8px;
+    width: 40%;
+    margin:12px 0px;
+}
+ol.nested#searchLi{
+    /* display:flex; */
+    flex-direction: column;
+    justify-content: center;
+}
+.li11{
+    margin:12px;
+}
+/* main  */
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-direction: column;
+    /* background-image: url('https://photos5.appleinsider.com/gallery/51707-102459-iPhone-15-Ultra-colors-xl.jpg'); */
+    background-image: url('images/titanium.jpeg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: right/cover;
+    position: relative;
+    background-size: 92%;
+    color:white;
+    height: 500px;
+    background-color:black;
+}
+
+.main h1{
+    font-weight: 900px;
+   }
+.main a{
+    color: rgb(49, 49, 247);
+    margin-top: 5px;
+    text-decoration: none;
+}
+.iphone15{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    flex-direction: column;
+    margin-top: 60px;
+    font-size: 1.5rem;
+    position: relative;
+    
+}
+.iphone15 a{
+  text-decoration: none;
+  margin-top: 10px;
+}
+video{
+    width:100%;
+    height:100%;
+}
+.watch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    flex-direction: column;
+    margin-top: -519px;
+    height:70vh;
+    /* background-image:url(images/WatchVideo.mp4) ; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: none;
+    background-attachment: center/cover;
+    position: relative;
+    background-size: cover;
+    color: white;
+}
+
+.watchSeries{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.watchSeries h4{
+    margin: 5px;
+    position: absolute;
+    z-index: 1;
+}
+div.title
+    {
+        display: flex;
+        align-items: center;
+    }
+
+.title img{
+    margin: 20px;
+}
+.watchBtn button{
+    padding: 15px;
+ border-radius:12px;
+ font-size: 1rem;
+ margin-top:12px;
+ 
+}
+/* //cards */
+.container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+.cards{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50vw;
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.cards h5{
+    width:50%;
+}
+.caption{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+.caption img{
+    height:40px
+}
+.p{
+    color:orangered;
+}
+.links a{
+  margin:10px;
+  text-decoration: none;
+  color:rgb(43, 43, 222);
+}
+.images{
+    width:556px;
+}
+footer{
+    width:100vw;
+    height:60vh;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color:white;
+}
+/* Slide Designing  */
+.slide-container{
+    width:100%;
+    height:800px;
+    background-image: url('images/family_man.jpg');
+    animation: changebg 10s linear  infinite;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes changebg {
+    0%{
+        background-image: url('images/foundation.jpg');
+    }
+    50%{
+        background-image: url('images/family_man.jpg');
+    }
+    100%{
+        background-image: url('images/slide.jpg');
+    }
+}
+/* //Responsive Design  */
+div.tablet{
+    display:none
+}
+.responsive{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: black;
+        right: 0px;
+        cursor: pointer;
+        color: white;
+        z-index: 1;
+        width: 100%;
+        /* opacity: 0;
+        transition: opacity 1s ease-in-out; */
+        opacity: 1;
+        animation: opacity_nav 2s linear 1;
+    }
+@keyframes opacity_nav {
+    0%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    
+
